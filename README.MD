@@ -40,7 +40,7 @@ Le projet est alors prêt à être utilisé.
 
 ---
 
-Commandes disponibles
+## Commandes disponibles
 1. Cacher un secret dans une image
 Syntaxe :
 
@@ -52,7 +52,7 @@ Exemple :
 ```bash
 python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Ceci est un message secret"
 ```
-Options :
+# Options :
 
 -i, --input : Chemin vers l'image PNG source (obligatoire)
 
@@ -60,7 +60,7 @@ Options :
 
 -s, --secret : Le message secret à cacher en tant que chaîne de caractères (obligatoire)
 
-Résultat :
+# Résultat :
 
 Crée une nouvelle image PNG avec le message caché
 
@@ -85,7 +85,8 @@ Affiche le message secret dans la console :
 ```text
 --> secret message is: "Ceci est un message secret"
 ```
-Limitations
+# Limitations
+
 Seul le format PNG est supporté
 
 Les modifications apportées aux images PNG sont imperceptibles mais présentes
@@ -93,3 +94,5 @@ Les modifications apportées aux images PNG sont imperceptibles mais présentes
 Les images JPEG ne sont pas supportées (considérez les convertir en PNG)
 
 Le message doit être en UTF-8
+
+---
