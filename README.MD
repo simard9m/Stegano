@@ -8,17 +8,17 @@
 ## Description
 Application CLI de stéganographie permettant de cacher et récupérer des messages secrets dans des images PNG en utilisant la technique de substitution des bits de poids faible (LSB - Least Significant Bit).
 
-Prérequis
-Avant de pouvoir utiliser cette application, assurez-vous d'avoir les éléments suivants installés sur votre système :
-
-Python
+## Compatibilité
+Langage - Python version 3.8
 Téléchargez et installez Python 3.8+ depuis : https://www.python.org/downloads/
 
-## 1. Installation de l'environnement
+## Utilisation
+
+### 1. Installation de l'environnement
 
 Le projet a été réalisé avec un environnement **conda**, mais il est aussi possible d'installer les dépendances avec **pip**, peu importe si l'utilisateur choisit un environnement virtuel ou un autre gestionnaire d'environnements Python
 
-### 1.1. Installation avec conda
+#### 1.1. Installation avec conda
 
 1. Se placer dans le dossier `install` du projet.
 2. Créer l'environnement à partir du fichier `environment.yml` :
@@ -29,7 +29,7 @@ Le projet a été réalisé avec un environnement **conda**, mais il est aussi p
    conda activate tp2_Emile_xavier
 L'environnement est maintenant prêt à être utilisé.
 
-### 1.2. Installation avec pip
+#### 1.2. Installation avec pip
 1. Créer et activer un environnement virtuel (venv, conda, etc.).
 2. Se placer dans le dossier `install`.
 3. Installer les dépendances :
@@ -40,8 +40,8 @@ Le projet est alors prêt à être utilisé.
 
 ---
 
-## 2. Commandes disponibles
-### 2.1 Cacher un secret dans une image
+### 2. Utilisation de commandes
+#### 2.1 Cacher un secret dans une image
 Syntaxe :
 
 ```bash
@@ -52,7 +52,7 @@ Exemple :
 ```bash
 python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Ceci est un message secret"
 ```
-#### 2.1.2 Options :
+##### 2.1.2 Options :
 
 -i, --input : Chemin vers l'image PNG source (obligatoire)
 
@@ -60,7 +60,7 @@ python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Cec
 
 -s, --secret : Le message secret à cacher en tant que chaîne de caractères (obligatoire)
 
-#### Résultat :
+##### Résultat :
 
 Crée une nouvelle image PNG avec le message caché
 
@@ -68,7 +68,7 @@ Le message ne sera pas visible à l'oeil nu
 
 L'image peut être ouverte normalement dans n'importe quel visualiseur
 
-### 2.2 Révéler un secret caché
+#### 2.2 Révéler un secret caché
 Syntaxe :
 
 ```bash
@@ -85,7 +85,7 @@ Affiche le message secret dans la console :
 ```text
 --> secret message is: "Ceci est un message secret"
 ```
-### Limitations
+#### Limitations
 
 - Seul le format PNG est supporté
 
