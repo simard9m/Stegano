@@ -9,9 +9,9 @@
 Application CLI de stéganographie permettant de cacher et récupérer des messages secrets dans des images PNG en utilisant la technique de substitution des bits de poids faible (LSB - Least Significant Bit).
 
 ## Compatibilité
-Python - Version 3.8
+Python - Version 3.11
 
-Téléchargez et installez Python 3.8+ depuis : https://www.python.org/downloads/
+Téléchargez et installez Python 3.11+ depuis : https://www.python.org/downloads/
 
 ---
 
