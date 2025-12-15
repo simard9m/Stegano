@@ -87,12 +87,12 @@ Affiche le message secret dans la console :
 ```
 ### Limitations
 
-Seul le format PNG est supporté
+- Seul le format PNG est supporté
 
-Les modifications apportées aux images PNG sont imperceptibles mais présentes
+- Les modifications apportées aux images PNG sont imperceptibles mais présentes
 
-Les images JPEG ne sont pas supportées (considérez les convertir en PNG)
+- Les images JPEG ne sont pas supportées (considérez les convertir en PNG)
 
-Le message doit être en UTF-8
+- Le message doit être en UTF-8
 
 ---
