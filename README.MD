@@ -10,6 +10,7 @@ Application CLI de stéganographie permettant de cacher et récupérer des messa
 
 ## Compatibilité
 Langage - Python version 3.8
+
 Téléchargez et installez Python 3.8+ depuis : https://www.python.org/downloads/
 
 ## Utilisation
