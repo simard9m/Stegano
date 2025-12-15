@@ -52,7 +52,7 @@ Exemple :
 ```bash
 python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Ceci est un message secret"
 ```
-### 2.1.2 Options :
+#### 2.1.2 Options :
 
 -i, --input : Chemin vers l'image PNG source (obligatoire)
 
@@ -60,7 +60,7 @@ python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Cec
 
 -s, --secret : Le message secret à cacher en tant que chaîne de caractères (obligatoire)
 
-### Résultat :
+#### Résultat :
 
 Crée une nouvelle image PNG avec le message caché
 
@@ -79,7 +79,7 @@ Exemple :
 ```bash
 python src/stegano.py reveal output/image_secret.png
 ```
-Résultat :
+#### Résultat :
 Affiche le message secret dans la console :
 
 ```text
