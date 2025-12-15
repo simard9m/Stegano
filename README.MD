@@ -44,11 +44,11 @@ Commandes disponibles
 1. Cacher un secret dans une image
 Syntaxe :
 
-bash
+```bash
 python src/stegano.py hide -i <chemin_image_input.png> -o <chemin_image_output.png> -s "votre message secret"
 Exemple :
 
-bash
+```bash
 python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Ceci est un message secret"
 Options :
 
@@ -69,11 +69,11 @@ L'image peut être ouverte normalement dans n'importe quel visualiseur
 2. Révéler un secret caché
 Syntaxe :
 
-bash
+```bash
 python src/stegano.py reveal <chemin_image_avec_secret.png>
 Exemple :
 
-bash
+```bash
 python src/stegano.py reveal output/image_secret.png
 Résultat :
 Affiche le message secret dans la console :
