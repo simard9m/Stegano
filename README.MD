@@ -46,10 +46,12 @@ Syntaxe :
 
 ```bash
 python src/stegano.py hide -i <chemin_image_input.png> -o <chemin_image_output.png> -s "votre message secret"
+```
 Exemple :
 
 ```bash
 python src/stegano.py hide -i input/image.png -o output/image_secret.png -s "Ceci est un message secret"
+```
 Options :
 
 -i, --input : Chemin vers l'image PNG source (obligatoire)
@@ -71,16 +73,18 @@ Syntaxe :
 
 ```bash
 python src/stegano.py reveal <chemin_image_avec_secret.png>
+```
 Exemple :
 
 ```bash
 python src/stegano.py reveal output/image_secret.png
+```
 Résultat :
 Affiche le message secret dans la console :
 
-text
+```text
 --> secret message is: "Ceci est un message secret"
-
+```
 Limitations
 Seul le format PNG est supporté
 
